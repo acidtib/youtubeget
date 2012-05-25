@@ -26,12 +26,8 @@ fi
 		
 		# Start downlading the video
 		youtube-dl $1 -o "Videos/$title.mp4" 
-						
-		# Start the convertion to mp3
-		ffmpeg -i "download.mp4" -acodec libmp3lame -ac 2 -ab 128k -vn -y "test.mp3" 
-				
-		#rm "Video/$title.mp4" 
-			
+		
+		echo Your video is inside the Videos directory!											
 
 # Close it up
 exit
