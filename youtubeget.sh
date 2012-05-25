@@ -13,7 +13,10 @@ fi
 	cd Video
 		
 		title="$(youtube-dl -e $1)"
-		youtube-dl $1 -o "$title.mp4"
+		
+		youtube-dl $1 -o "$title.mp4" &&
+		
+		rm "$title.mp4" &&
 		
 		cd ..
 	
